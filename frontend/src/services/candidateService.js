@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/candidates";
+// const API = "http://localhost:5000/api/candidates";
+
+const API =
+  "https://mini-recruitment-workflow-system.onrender.com/api/candidates";
 
 // Get All Candidates
 export const getCandidates = async () => {
