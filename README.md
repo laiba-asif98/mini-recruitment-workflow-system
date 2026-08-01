@@ -1,22 +1,45 @@
 # Mini Recruitment Workflow System
 
-A responsive recruitment workflow application built with React and a basic Express.js backend. The project allows recruiters to manage candidates, track recruitment progress, and simulate a real-world hiring workflow using mock APIs.
+## Overview
+
+Mini Recruitment Workflow System is a full-stack web application developed as an internship assignment. It helps recruiters manage candidates and track their recruitment process from application to final selection.
+
+The project is built with React.js for the frontend and Express.js for the backend using mock data.
 
 ---
 
 ## Features
 
-- User Login Interface
-- Dashboard with recruitment statistics
+### Frontend
+
+- Responsive Login Page
+- Dashboard with statistics cards
+- Recruitment Pipeline
 - Candidate List
-- Search Candidates
-- Filter Candidates by Status
+- Search candidates by name or email
+- Filter candidates by recruitment status
 - Pagination
-- Candidate Details
-- Add New Candidate
-- Responsive Design
-- Mock API Integration
-- Basic Express.js Backend
+- Candidate Details Page
+- Update Candidate Status
+- Recruiter Notes
+- Recruitment Timeline
+- Assignment Details
+- Loading State
+- Error State
+- Empty State
+- Reusable Components
+
+### Backend
+
+- Express.js REST API
+- Mock Data
+- Get All Candidates
+- Get Candidate By ID
+- Add Candidate
+- Update Candidate
+- Delete Candidate
+- CORS Enabled
+- JSON Request Handling
 
 ---
 
@@ -26,17 +49,15 @@ A responsive recruitment workflow application built with React and a basic Expre
 
 - React.js
 - React Router DOM
+- Axios
 - React Hook Form
 - Zod
-- Axios
 - CSS
-- React Icons
 
 ### Backend
 
 - Node.js
 - Express.js
-- CORS
 
 ---
 
@@ -46,12 +67,13 @@ A responsive recruitment workflow application built with React and a basic Expre
 Mini Recruitment Workflow System
 │
 ├── frontend
-│   ├── components
-│   ├── pages
-│   ├── services
-│   ├── styles
-│   ├── routes
-│   └── utils
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── routes
+│   │   ├── constants
+│   │   └── styles
 │
 ├── backend
 │   ├── controllers
@@ -65,33 +87,29 @@ Mini Recruitment Workflow System
 
 ---
 
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | /api/candidates | Get all candidates |
+| GET | /api/candidates/:id | Get candidate by ID |
+| POST | /api/candidates | Add candidate |
+| PATCH | /api/candidates/:id | Update candidate |
+| DELETE | /api/candidates/:id | Delete candidate |
+
+---
+
 ## Installation
 
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/laiba-asif98/mini-recruitment-workflow-system.git
 ```
 
 ---
 
-### Install Frontend
-
-```bash
-cd frontend
-npm install
-npm start
-```
-
-Frontend runs on:
-
-```
-http://localhost:3000
-```
-
----
-
-### Install Backend
+### Backend
 
 ```bash
 cd backend
@@ -99,7 +117,7 @@ npm install
 npm start
 ```
 
-Backend runs on:
+Runs on
 
 ```
 http://localhost:5000
@@ -107,40 +125,50 @@ http://localhost:5000
 
 ---
 
-## API Endpoints
+### Frontend
 
-### Get All Candidates
-
-```
-GET /api/candidates
-```
-
-### Get Candidate By ID
-
-```
-GET /api/candidates/:id
+```bash
+cd frontend
+npm install
+npm start
 ```
 
-### Add Candidate
+Runs on
 
 ```
-POST /api/candidates
+http://localhost:3000
 ```
 
 ---
 
 ## Future Improvements
 
-- Authentication
-- Database Integration
-- File Upload
-- Candidate Resume Management
-- Assignment Management
-- Recruiter Authentication
+- JWT Authentication
+- PostgreSQL Database
+- Resume Upload
 - Email Notifications
+- Role Based Authentication
+- Deployment using Vercel and Render
+
+---
+
+## AI Usage
+
+AI tools were used for:
+
+- Learning concepts
+- Debugging errors
+- Improving code quality
+- UI refinement
+- Documentation guidance
+
+All generated code was reviewed, modified, integrated, tested, and verified before submission.
 
 ---
 
 ## Author
 
 **Laiba Asif**
+
+GitHub:
+https://github.com/laiba-asif98
