@@ -9,6 +9,13 @@ app.use(cors());
 
 app.use(express.json());
 
+// Home Route
+app.get("/", (req, res) => {
+
+    res.send("Mini Recruitment Workflow System Backend is Running 🚀");
+
+});
+
 app.use("/api/candidates", candidateRoutes);
 
 const PORT = 5000;
