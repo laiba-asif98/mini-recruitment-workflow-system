@@ -156,6 +156,7 @@
         width:100%;
         height:auto;
         padding:15px;
+        min-height:auto;  
     }
 
     .menu{
@@ -192,6 +193,12 @@
 
 @media (max-width:480px){
 
+    .sidebar{
+    width:100%;
+    height:auto;
+    min-height:unset;
+    padding:15px;
+}
     .profile h4,
     .profile p{
         display:none;
