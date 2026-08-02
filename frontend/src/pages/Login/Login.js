@@ -18,10 +18,14 @@ function Login() {
         email.trim() === "admin@demo.com" &&
         password.trim() === "admin123"
     ) {
+
         alert("Correct Login");
         navigate("/dashboard");
+
     } else {
+
         alert("Wrong Login");
+
     }
 
 };
