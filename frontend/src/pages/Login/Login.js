@@ -10,31 +10,22 @@ function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    // const handleLogin = (e) => {
-
-    //     e.preventDefault();
-
-    //     if (
-    //         email === "admin@demo.com" &&
-    //         password === "admin123"
-    //     ) {
-
-    //         navigate("/dashboard");
-
-    //     } else {
-
-    //         alert("Invalid Email or Password");
-
-    //     }
-
-    // };
-const handleLogin = (e) => {
+   const handleLogin = (e) => {
 
     e.preventDefault();
 
-    alert("HANDLE LOGIN IS RUNNING");
+    if (
+        email.trim() === "admin@demo.com" &&
+        password.trim() === "admin123"
+    ) {
+        alert("Correct Login");
+        navigate("/dashboard");
+    } else {
+        alert("Wrong Login");
+    }
 
 };
+
     return (
 
         <div className="login-page">
