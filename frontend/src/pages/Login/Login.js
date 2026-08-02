@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FaUserTie, FaEnvelope, FaLock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "../../styles/login.css";
@@ -6,15 +7,27 @@ function Login() {
 
     const navigate = useNavigate();
 
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
     const handleLogin = (e) => {
 
         e.preventDefault();
 
-        navigate("/dashboard");
+        if (
+            email === "admin@demo.com" &&
+            password === "admin123"
+        ) {
+
+            navigate("/dashboard");
+
+        } else {
+
+            alert("Invalid Email or Password");
+
+        }
 
     };
-
-    
 
     return (
 
@@ -59,7 +72,7 @@ function Login() {
                     onSubmit={handleLogin}
                 >
 
-                    <h2>Welcome  👋</h2>
+                    <h2>Welcome 👋</h2>
 
                     <p>
                         Sign in to continue
@@ -72,6 +85,10 @@ function Login() {
                         <input
                             type="email"
                             placeholder="Email"
+                            value={email}
+                            onChange={(e) =>
+                                setEmail(e.target.value)
+                            }
                             required
                         />
 
@@ -84,6 +101,10 @@ function Login() {
                         <input
                             type="password"
                             placeholder="Password"
+                            value={password}
+                            onChange={(e) =>
+                                setPassword(e.target.value)
+                            }
                             required
                         />
 
@@ -94,6 +115,20 @@ function Login() {
                         Sign In →
 
                     </button>
+
+                    <div className="demo-credentials">
+
+                        <h4>Demo Credentials</h4>
+
+                        <p>
+                            <strong>Email:</strong> admin@demo.com
+                        </p>
+
+                        <p>
+                            <strong>Password:</strong> admin123
+                        </p>
+
+                    </div>
 
                 </form>
 

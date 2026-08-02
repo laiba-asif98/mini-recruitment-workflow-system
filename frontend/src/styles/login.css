@@ -104,6 +104,29 @@ body{
 
 }
 
+
+.demo-credentials{
+    margin-top:20px;
+    padding:15px;
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    text-align:center;
+}
+
+.demo-credentials h4{
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.demo-credentials p{
+    margin:5px 0;
+    color:#4b5563;
+    font-size:14px;
+}
+
+
+
 /* ===========================
         BLOBS
 =========================== */
@@ -403,3 +426,4 @@ body{
     }
 
 }
+
