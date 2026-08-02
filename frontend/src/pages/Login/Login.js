@@ -28,23 +28,13 @@ function Login() {
     //     }
 
     // };
-
-    const handleLogin = (e) => {
+const handleLogin = (e) => {
 
     e.preventDefault();
 
-    if (
-        email.trim() === "admin@demo.com" &&
-        password.trim() === "admin123"
-    ) {
-        alert("Correct Login");
-        navigate("/dashboard");
-    } else {
-        alert("Wrong Login");
-    }
+    alert("HANDLE LOGIN IS RUNNING");
 
 };
-
     return (
 
         <div className="login-page">
